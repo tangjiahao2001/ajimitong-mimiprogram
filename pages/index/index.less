@@ -1,0 +1,107 @@
+page{
+  background: #efeff4;
+}
+
+.container {
+  flex-wrap: wrap;
+  background: #efeff4;
+  font-family: '微软雅黑';
+
+  .col {
+    width: 26%;
+    padding-top: 33%;
+    margin: 25rpx 3.666666%;
+    position: relative;
+    .more{
+      background: url(../../images/more.png) no-repeat center center;
+      background-size: 60%;
+      border: 6rpx dotted #d9d9d9;
+    }
+    .add_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 6rpx dotted #d9d9d9;
+    }
+    .item{
+      width: 100%;
+      height: 100%;
+      border-radius: 20rpx;
+      overflow: hidden;
+      position: absolute;
+      box-sizing: border-box;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .notepad{
+      background: #fff;
+      .content{
+        flex: 1;
+        .txt{
+          flex: 1;
+          text-align: center;
+          padding: 0 5%;
+          font-size: 28rpx;
+          overflow:hidden; 
+          text-overflow:ellipsis;
+          display:-webkit-box; 
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:3; 
+          display:box;
+          box-orient:vertical;
+          line-clamp:3;
+        }
+        display: flex;
+        flex-flow:row nowrap;
+        align-items:center;
+        justify-content:center;
+      }
+      .bottom{
+        height: 80rpx;
+        background: #9f7968;
+        font-size: 22rpx;
+        .txt{
+          color: #fff;
+        }
+        display: flex;
+        flex-flow:row nowrap;
+        align-items:center;
+        justify-content:center;
+      }
+    }
+    .today{
+      background: #fde3d5;
+    }
+    .yesterday{
+      background: #d5effd;
+    }
+
+    .tips {
+      position: absolute;
+      z-index: 9;
+      right: -300rpx;
+      bottom: -140rpx;
+      .tips_box {
+        position: relative;
+        .tips_icon {
+          position: absolute;
+          top:-60rpx;
+          width: 70rpx;
+          height: 70rpx;
+          margin-left: 30rpx;
+          background-size:100%; 
+        }
+      }
+
+      .tips_txt {
+        width: 360rpx;
+        font-size: 32rpx;
+        padding: 45rpx 0;
+        text-align: center;
+        background: #fff;
+        border-radius:14rpx; 
+      }
+    }
+  }
+}

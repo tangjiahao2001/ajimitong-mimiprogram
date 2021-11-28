@@ -1,116 +1,103 @@
-/*
-***HotApp云笔记，基于HotApp小程序统计云后台
-***免费云后台申请地址 https://weixin.hotapp.cn/cloud
-***API 文档地址：https://weixin.hotapp.cn/api
-***小程序技术讨论QQ群：173063969
-*/
-/**index.wxss**/
-page{
-    background: #efeff4;
+page {
+  background: #efeff4;
 }
-.container{
-    flex-wrap: wrap;
-    background: #efeff4;
-    font-family: '微软雅黑';
+.container {
+  flex-wrap: wrap;
+  background: #efeff4;
+  font-family: '微软雅黑';
 }
-.col{
-    width: 26%;
-    padding-top: 33%;
-    margin: 25rpx 3.666666%;
-    position: relative;
+.container .col {
+  width: 26%;
+  padding-top: 33%;
+  margin: 25rpx 3.666666%;
+  position: relative;
 }
-.item{
-    width: 100%;
-    height: 100%;
-    border-radius: 20rpx;
-    overflow: hidden;
-    position: absolute;
-    box-sizing: border-box;
-    top: 0;
-    display: flex;
-    flex-direction: column;
+.container .col .more {
+  background: url(../../images/more.png) no-repeat center center;
+  background-size: 60%;
+  border: 6rpx dotted #d9d9d9;
 }
-.item .content{
-    flex: 1;
+.container .col .add_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6rpx dotted #d9d9d9;
 }
-.item .content,
-.item .bottom{
-    display: flex;
-    flex-flow:row nowrap;
-    align-items:center;
-    justify-content:center;
+.container .col .item {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
-.item .bottom{
-    height: 80rpx;
-    background: #9f7968;
-    font-size: 22rpx;
-    
+.container .col .notepad {
+  background: #fff;
 }
-.item  .txt{
-    flex: 1;
-    text-align: center;
+.container .col .notepad .content {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
-.item .content .txt{
-    padding: 0 5%;
-    font-size: 28rpx;
-    overflow:hidden; 
-    text-overflow:ellipsis;
-    display:-webkit-box; 
-    -webkit-box-orient:vertical;
-    -webkit-line-clamp:3; 
-    display:box;
-    box-orient:vertical;
-    line-clamp:3;
+.container .col .notepad .content .txt {
+  flex: 1;
+  text-align: center;
+  padding: 0 5%;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: box;
+  box-orient: vertical;
+  line-clamp: 3;
 }
-.item .bottom .txt{
-    color: #fff;
+.container .col .notepad .bottom {
+  height: 80rpx;
+  background: #9f7968;
+  font-size: 22rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
-.item.notepad{
-    background: #fff;
+.container .col .notepad .bottom .txt {
+  color: #fff;
 }
-.item.today{
-    background: #fde3d5;
+.container .col .today {
+  background: #fde3d5;
 }
-.item.yesterday{
-    background: #d5effd;
+.container .col .yesterday {
+  background: #d5effd;
 }
-.add_box,
-.item.more{
-    border: 6rpx dotted #d9d9d9;
+.container .col .tips {
+  position: absolute;
+  z-index: 9;
+  right: -300rpx;
+  bottom: -140rpx;
 }
-.add_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container .col .tips .tips_box {
+  position: relative;
 }
-.tips_box{
-    position: relative;
+.container .col .tips .tips_box .tips_icon {
+  position: absolute;
+  top: -60rpx;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 30rpx;
+  background-size: 100%;
 }
-.tips_icon{
-    position: absolute;
-    top:-60rpx;
-}
-.item.more{
-    background: url(../../images/more.png) no-repeat center center;
-    background-size: 60%;
-}
-.tips{
-    position: absolute;
-    z-index: 9;
-    right: -300rpx;
-    bottom: -140rpx;
-}
-.tips_txt{
-    width: 360rpx;
-    font-size: 32rpx;
-    padding: 45rpx 0;
-    text-align: center;
-    background: #fff;
-    border-radius:14rpx; 
-}
-.tips_icon{
-    width: 70rpx;
-    height: 70rpx;
-    margin-left: 30rpx;
-    background-size:100%; 
+.container .col .tips .tips_txt {
+  width: 360rpx;
+  font-size: 32rpx;
+  padding: 45rpx 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 14rpx;
 }

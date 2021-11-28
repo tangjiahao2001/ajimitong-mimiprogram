@@ -1,0 +1,44 @@
+<!-- <view class="user_info_wrap">
+    <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+        <image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+        <view class="user_info">
+            <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+            <view class="user_name">{{userinfo.nickName}}</view>
+        </view>
+    </view>
+    <view wx:else class="user_btn">
+        <navigator url="/pages/login/index">
+            请登录账号同步笔记
+        </navigator>
+    </view>
+</view> -->
+
+<view class="user_info_wrap">
+  <view class="user_info">
+    <view wx:if="{{!hasUserInfo}}" class="user_btn">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="handleGetUserProfile"> 获取头像昵称 </button>
+      <button wx:else open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"> 获取头像昵称 </button>
+    </view>
+    <view wx:else class="user_img_wrap">
+      <image bindtap="bindViewTap" class="user_big_icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_little">
+        <image class="user_little_icon" src="{{userInfo.avatarUrl}}" />
+        <view class="user_name">{{userInfo.nickName}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 意见反馈界面转移至此页面 -->
+<view class="container">
+  <view class="header">
+    <text class="h1">热点记事本1.1.0</text>
+    <text class="h1content">个人小程序 </text>
+  </view>
+  <view class="section" bindtap="bindViewTap">
+    <view class="button">
+      <text>用户反馈</text>
+      <text>></text>
+    </view>
+  </view>
+</view>

@@ -1,9 +1,4 @@
-<!--/*
-***HotApp云笔记，基于HotApp小程序统计云后台
-***免费云后台申请地址 https://weixin.hotapp.cn/cloud
-***API 文档地址：https://weixin.hotapp.cn/api
-***小程序技术讨论QQ群：173063969
-*/-->
+
 <!--index.wxml-->
 <form  bindsubmit="onSubmit" bindreset="">
 <view class="container">
@@ -16,10 +11,11 @@
         name="content" focus="{{focus}}" auto-focus="true"  placeholder="点击添加文本"   />
     </view>
     <view class='date placeholder'>
-        {{ item.update_date }}
+        创建时间:{{ item.create_date }}
+        更新时间:{{ item.update_date }}
     </view>
     <view class='bottom'>
-         <button formType="submit" class='btn success'>保存</button>
+        <button formType="submit" class='btn success'>保存</button>
         <button class='btn del' bindtap="onDelete">删除</button>
     </view>
 </view>

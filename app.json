@@ -1,17 +1,18 @@
 {
   "debug": true,
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/feedback/index",
     "pages/edit/index",
     "pages/create/index",
-    "pages/about/index"
+    "pages/about/index",
+    "pages/user/index"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#ff9b6e",
-    "navigationBarTitleText": "热点记事本",
-    "navigationBarTextStyle":"#ffffff",
-    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "阿基米瞳",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light",
     "backgroundColor": "#efeff4",
     "enablePullDownRefresh": true
   },
@@ -21,16 +22,26 @@
     "backgroundColor": "#f5f5f7",
     "borderStyle": "white",
     "position": "bottom",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "记事本",
-      "iconPath": "images/icon1.png",
-      "selectedIconPath": "images/sicon1.png"
-    }, {
-      "pagePath": "pages/about/index",
-      "text": "关于我们",
-      "iconPath": "images/icon2.png",
-      "selectedIconPath": "images/sicon2.png"
-    }]
-  }
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "记事本",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/sicon1.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "about",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/sicon2.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "images/icon3.png",
+        "selectedIconPath": "images/sicon3.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

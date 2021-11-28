@@ -1,12 +1,2 @@
-<view class="container">
-  <view class="header">
-    <text class="h1">热点记事本1.1.0</text>
-    <text class="h1content"> 芝麻小事网络科技（武汉）有限公司</text>
-  </view>
-  <view class="section" bindtap="bindViewTap">
-    <view class="button">
-      <text>用户反馈</text>
-      <text>></text>
-    </view>
-  </view>
-</view>
+
+<calender></calender>

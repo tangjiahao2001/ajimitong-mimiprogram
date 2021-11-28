@@ -17,8 +17,8 @@ Page({
 
   },
 
-  /**
-   * 首次渲染事件
+  /** 首次渲染事件
+   * 
    */
   onShow: function () {
     // 获取数据
@@ -27,18 +27,20 @@ Page({
       that.onLoadData();
     });
   },
-  /**
-   * 分享网页
+
+  /** 分享网页
+   * 
    */
   onShareAppMessage: function () {
      return {
-       title: '热点记事本',
-       desc: '小程序二维码精准统计平台hotapp,技术讨论QQ群：173063969',
+       title: '阿基米曈',
+       desc: '我的笔记',
        path: '/pages/index/index?id=页面参数&userId=备注信息'
      }
   },
-  /**
-   * 新增笔记事件
+
+  /** 新增笔记事件
+   * 
    */
   onNewItem: function (event) {
     wx.navigateTo({
@@ -46,8 +48,8 @@ Page({
     })
   },
 
-  /**
-   * 编辑笔记事件
+  /** 编辑笔记事件
+   * 
    */
   onEditItem: function (event) {
     wx.navigateTo({
@@ -55,8 +57,8 @@ Page({
     })
   },
 
-  /**
-   * 获取数据事件
+  /** 获取数据事件
+   * 
    */
   onLoadData: function () {
     var that = this;
@@ -71,8 +73,8 @@ Page({
     });
   },
 
-  /**
-   * 下拉刷新事件, 数据同步
+  /** 下拉刷新事件, 数据同步
+   * 
    */
   onPullDownRefresh: function () {
     wx.showToast({

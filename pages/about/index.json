@@ -1,3 +1,6 @@
 {
-      "navigationBarTitleText": "关于我们"
+  "navigationBarTitleText": "日历",
+  "usingComponents": {
+    "calender": "../../component/calendar/index"
+  }
 }

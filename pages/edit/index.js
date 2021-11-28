@@ -1,12 +1,7 @@
-/*
-***HotApp云笔记，基于HotApp小程序统计云后台
-***免费云后台申请地址 https://weixin.hotapp.cn/cloud
-***API 文档地址：https://weixin.hotapp.cn/api
-***小程序技术讨论QQ群：173063969
-*/
-
 var hotapp = require('../../utils/hotapp.js');
 var api = require('../../utils/api.js');
+import { showToast } from "../../utils/asyncWx";
+
 
 Page({
     data: {
@@ -21,10 +16,11 @@ Page({
             state: 1
         },
         isNew: false,
+        // 光标是否再textarea区域
         focus: false,
     },
-    /**
-     * 页面首次加载事件
+    /** 页面首次加载事件,设置key值
+     * 
      */
     onLoad: function(options) {
         var that = this;
@@ -35,15 +31,17 @@ Page({
         });
     },
 
-    /**
-     * 页面渲染事件
+    /** 页面渲染事件,根据key值完整加载item
+     * 
      */
     onShow: function() {
         var that = this;
+        // 根据key加载数据
         that.loadData(that.data.item.key);
     },
-    /**
-     * 保存数据事件
+
+    /** 编辑后,点击保存事件
+     * 
      */
     onSubmit: function(event) {
         var item = this.data.item;
@@ -53,16 +51,23 @@ Page({
             item: item
         });
         this.saveData();
+        wx.navigateBack({
+            delta: 1
+        });
+          
     },
+    
+    // 判断光标在哪里
     onFocus:function(e){
         this.setData({
             focus: true,
         });
     },
-    /**
-     * 请求服务器保存数据
+
+    /** 请求服务器保存数据
+     * 
      */
-    saveData: function() {
+    async saveData() {
         var item = this.data.item;
         var now = Date.parse(new Date()) / 1000;
         item.update_time = now;
@@ -70,6 +75,7 @@ Page({
             item: item
         });
         api.store(this.data.item, function(res) {
+            console.log("store这里的res"+res);
             if (res) {
                 wx.showToast({
                     title: "保存成功",
@@ -81,6 +87,8 @@ Page({
                         },1000)
                     }
                 });
+
+                  
             } else {
                 wx.showToast({
                     title: "保存失败"
@@ -94,6 +102,7 @@ Page({
      */
     onDelete: function(event) {
         api.destroy(this.data.item, function(res) {
+            console.log("我的"+res);
             if (res) {
                 wx.showToast({
                     title: "删除成功",
@@ -101,7 +110,7 @@ Page({
                         // 返回首页
                         setTimeout(function(){
                             wx.hideToast();
-                            wx.navigateBack();
+                            wx.navigateBack({delta: 1});
                         },1000)
                     }
                 });
@@ -113,8 +122,8 @@ Page({
         });
     },
 
-    /**
-     * 获取数据
+    /** 根据key值获取数据,并且会将时间格式化
+     * 
      */
     loadData: function(key) {
         var that = this;
