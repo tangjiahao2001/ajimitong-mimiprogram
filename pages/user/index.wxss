@@ -65,7 +65,7 @@ page {
   font-size: 12px;
 }
 .container .section {
-  margin: 100rpx 0;
+  margin: 20rpx 0;
   height: 120rpx;
   line-height: 120rpx;
   border-radius: 10rpx;
@@ -75,4 +75,47 @@ page {
 .container .section .button {
   display: flex;
   justify-content: space-between;
+}
+/* 微信自带意见反馈功能 */
+.item {
+  padding-left: 0;
+  padding-right: 0;
+  line-height: inherit;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 90rpx;
+  align-items: center;
+  margin: 10rpx 50rpx;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 10rpx;
+  border: 0rpx;
+}
+.item .item_left {
+  flex: 9;
+  margin-left: 10rpx;
+}
+.item .item_left image {
+  display: flex;
+  justify-content: center;
+  width: 50rpx;
+  height: 50rpx;
+}
+.item .item_left .item_title {
+  margin-left: 10rpx;
+  font-size: 32rpx;
+}
+.item .item_right {
+  flex: 1;
+}
+.item .item_right image {
+  display: flex;
+  justify-content: center;
+  width: 50rpx;
+  height: 50rpx;
+}
+.item::after {
+  border: none;
+  border-radius: 0;
 }

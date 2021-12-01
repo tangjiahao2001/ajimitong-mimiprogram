@@ -1,5 +1,6 @@
 var hotapp = require('../../utils/hotapp.js');
 var api = require('../../utils/api.js');
+import { destroy } from "../../utils/api";
 import { showToast } from "../../utils/asyncWx";
 
 
@@ -13,6 +14,7 @@ Page({
             },
             create_time: "",
             update_time: "",
+            // state: 1 表示新建文件; state: 2 表示编辑文件; state: 3 表示删除;
             state: 1
         },
         isNew: false,
@@ -51,10 +53,9 @@ Page({
             item: item
         });
         this.saveData();
-        wx.navigateBack({
-            delta: 1
-        });
-          
+        // wx.navigateBack({
+        //     delta: 1
+        // });
     },
     
     // 判断光标在哪里
@@ -75,7 +76,6 @@ Page({
             item: item
         });
         api.store(this.data.item, function(res) {
-            console.log("store这里的res"+res);
             if (res) {
                 wx.showToast({
                     title: "保存成功",
@@ -87,8 +87,6 @@ Page({
                         },1000)
                     }
                 });
-
-                  
             } else {
                 wx.showToast({
                     title: "保存失败"
@@ -97,8 +95,8 @@ Page({
         });
     },
 
-    /**
-     * 删除记事本事件
+    /** 删除记事本事件
+     * 
      */
     onDelete: function(event) {
         api.destroy(this.data.item, function(res) {

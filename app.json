@@ -6,11 +6,13 @@
     "pages/edit/index",
     "pages/create/index",
     "pages/about/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/feedbackForBug/index",
+    "pages/wuziqi/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff9b6e",
-    "navigationBarTitleText": "阿基米瞳",
+    "navigationBarTitleText": "阿基米曈",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
     "backgroundColor": "#efeff4",
@@ -26,20 +28,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "记事本",
-        "iconPath": "images/icon1.png",
-        "selectedIconPath": "images/sicon1.png"
+        "iconPath": "images/page_icon/icon_biji.png",
+        "selectedIconPath": "images/page_icon/sicon_biji.png"
       },
       {
         "pagePath": "pages/about/index",
         "text": "about",
-        "iconPath": "images/icon2.png",
-        "selectedIconPath": "images/sicon2.png"
+        "iconPath": "images/page_icon/icon_about.png",
+        "selectedIconPath": "images/page_icon/sicon_about.png"
+      },
+      {
+        "pagePath": "pages/wuziqi/index",
+        "text": "五子棋",
+        "iconPath": "images/page_icon/icon_wuziqi.png",
+        "selectedIconPath": "images/page_icon/sicon_wuziqi.png"
       },
       {
         "pagePath": "pages/user/index",
         "text": "个人中心",
-        "iconPath": "images/icon3.png",
-        "selectedIconPath": "images/sicon3.png"
+        "iconPath": "images/page_icon/icon_person.png",
+        "selectedIconPath": "images/page_icon/sicon_person.png"
       }
     ]
   },

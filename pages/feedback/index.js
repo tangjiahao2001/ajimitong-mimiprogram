@@ -1,9 +1,3 @@
-/*
-***HotApp云笔记，基于HotApp小程序统计云后台
-***免费云后台申请地址 https://weixin.hotapp.cn/cloud
-***API 文档地址：https://weixin.hotapp.cn/api
-***小程序技术讨论QQ群：173063969
-*/
 
 var hotapp = require('../../utils/hotapp.js');
 
@@ -27,8 +21,8 @@ Page({
    */
   onShareAppMessage: function () {
     return {
-      title: '热点记事本',
-      desc: '小程序二维码精准统计平台hotapp,技术讨论QQ群：173063969',
+      title: '阿基米曈',
+      desc: '阿基米瞳之家',
       path: '/pages/about/feedback?hotappPath=feedback'
     }
   },
@@ -44,18 +38,25 @@ Page({
     //将全局的方法赋值
     var that = this;
     //调用登录接口
-    wx.login({
-      success: function (res) {
-        wx.getUserInfo({
-          success: function (res) {
-            that.setData({
-              userInfo: res.userInfo
-            })
+    // wx.login({
+    //   success: function (res) {
+    //     wx.getUserInfo({
+    //       success: function (res) {
+    //         that.setData({
+    //           userInfo: res.userInfo
+    //         })
 
-            typeof cb == "function" && cb(res.userInfo)
-          }
-        })
-      }
+    //         typeof cb == "function" && cb(res.userInfo)
+    //       }
+    //     })
+    //   }
+    // })
+
+    // 前提是你已经登录了！！！
+    const userInfo = wx.getStorageSync("userInfo");
+    // console.log(userInfo);
+    this.setData({
+      userInfo: userInfo
     })
   },
 

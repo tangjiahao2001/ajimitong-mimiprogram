@@ -86,6 +86,14 @@ Page({
       url: '../feedback/index'
     })
   },
+
+  // 意见反馈Bug
+  bindViewForBugTap: function () {
+    wx.navigateTo({
+      url: '../feedbackForBug/index'
+    })
+  },
+
   //扫一扫
   scanCode: function () {
     wx.scanCode({
@@ -99,8 +107,8 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '热点记事本反馈系统组件',
-      desc: '小程序二维码精准统计平台hotapp,技术讨论QQ群：173063969',
+      title: '阿基米曈',
+      desc: '阿基米曈之家',
       path: '/pages/about/index?hotappPath=about'
     }
   }

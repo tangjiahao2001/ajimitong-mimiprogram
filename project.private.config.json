@@ -19,12 +19,6 @@
           "scene": null
         },
         {
-          "name": "登录页面",
-          "pathName": "pages/login/index",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "记事本首页",
           "pathName": "pages/index/index",
           "query": "",
@@ -33,6 +27,18 @@
         {
           "name": "日历",
           "pathName": "pages/about/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "用户反馈",
+          "pathName": "pages/feedback/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "五子棋",
+          "pathName": "pages/wuziqi/index",
           "query": "",
           "scene": null
         }

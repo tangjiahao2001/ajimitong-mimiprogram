@@ -5,7 +5,7 @@
 .default_weekend-color,
 .default_handle-color,
 .default_week-color {
-    color: #ff629a;
+    color: #f33578;
 }
 
 .default_today {
@@ -28,7 +28,7 @@
 }
 
 .default_normal-date {
-    color: #88d2ac;
+    color: #16a358;
 }
 
 .default_todo-circle {
@@ -44,7 +44,7 @@
 }
 
 .default_date-desc-lunar {
-    color: #e54d42;
+    color: #db2013;
 }
 
 .default_date-desc-disable {

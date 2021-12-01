@@ -169,20 +169,35 @@ function store(item, cb) {
                             // 返回首页
                             setTimeout(function(){
                                 wx.hideToast();
-                                wx.navigateBack({
-                                    delta: 1
-                                });
+                                // wx.navigateBack({
+                                //     delta: 1
+                                // });
                                 // wx.navigateBack();
                             },1000)
                         }
                     });
                 }else{
-                    wx.showToast({
+                    /* wx.showToast({
                         title: '保存并同步中',
                         icon: 'loading'
+                    }); */
+
+                    wx.showToast({
+                        title: '保存并同步成功',
+                        duration: 1500,
+                        mask: true,
+                        success: (result) => {
+                            setTimeout(function(){
+                                wx.hideToast();
+                                wx.navigateBack({
+                                    delta: 1
+                                });
+                            }, 1500)
+                        }
                     });
+
+                    // hotapp部分
                     that.updateVersion(function(success) {
-                        console.log("success"+success);
                         if (success) {
                             hotapp.post(item.key, item.value, function(res) {
                                 if (res.ret == 0) {
@@ -218,12 +233,27 @@ function destroy(item, cb) {
             if (oldItem.key == item.key) {
                 oldItem.state = 3;
                 wx.setStorageSync('items', arr);
+                wx.showToast({
+                    title: '删除成功',
+                    duration: 500,
+                    mask: true,
+                    success: (result) => {
+                        setTimeout(function(){
+                            wx.hideToast();
+                            wx.navigateBack({
+                                delta: 1
+                            });
+                        }, 500)
+                    }
+                });
             }
         });
+
+        // hotapp部分
         wx.getNetworkType({
             success: function(res) {
                 var networkType = res.networkType; // 返回网络类型2g，3g，4g，wifi
-                if(networkType !='none'){
+                if(networkType != 'none'){
                     that.updateVersion(function(success) {
                         if (success) {
                             // 向hotapp统计发送删除事件,后台可知晓用户删除了哪些标题
