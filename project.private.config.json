@@ -47,6 +47,30 @@
                     "pathName": "pages/xuexiziyuan/index",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "PPT资源",
+                    "pathName": "pages/xuexiziyuan_package/pages/PPT/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "百度文库下载",
+                    "pathName": "pages/xuexiziyuan_package/pages/baidu_download/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "计算机二级",
+                    "pathName": "pages/xuexiziyuan_package/pages/computer_2_level/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "Ajoke",
+                    "pathName": "pages/xuexiziyuan_package/pages/Ajoke/index",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

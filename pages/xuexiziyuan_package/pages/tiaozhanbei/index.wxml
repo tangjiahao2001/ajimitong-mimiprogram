@@ -1,6 +1,5 @@
-
 <view
-    wx:for="{{computer_2_levels}}"
+    wx:for="{{tiaozhanbeis}}"
     wx:key="id"
 >
     <SuperCopy name="{{item.name}}" url="{{item.url}}"></SuperCopy>

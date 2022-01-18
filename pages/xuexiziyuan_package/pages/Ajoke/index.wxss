@@ -1,0 +1,16 @@
+.contain{
+  height: 100%;
+  width: 100%;
+}
+
+.text{
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 250rpx;
+  font-family:'Courier New', Courier, monospace;
+  color: #ccc;
+  margin-left: 125rpx;
+  margin-top: 30rpx;
+}

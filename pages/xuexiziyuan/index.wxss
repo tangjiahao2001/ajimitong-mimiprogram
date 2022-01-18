@@ -1,7 +1,7 @@
 @font-face {
   font-family: "iconfont";
   /* Project id 3147812 */
-  src: url('//at.alicdn.com/t/font_3147812_fkoh9za6ty.woff2?t=1642431088389') format('woff2'), url('//at.alicdn.com/t/font_3147812_fkoh9za6ty.woff?t=1642431088389') format('woff'), url('//at.alicdn.com/t/font_3147812_fkoh9za6ty.ttf?t=1642431088389') format('truetype');
+  src: url('//at.alicdn.com/t/font_3147812_ld5n7r1l5ve.woff2?t=1642501077634') format('woff2'), url('//at.alicdn.com/t/font_3147812_ld5n7r1l5ve.woff?t=1642501077634') format('woff'), url('//at.alicdn.com/t/font_3147812_ld5n7r1l5ve.ttf?t=1642501077634') format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -9,6 +9,12 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-ajoke:before {
+  content: "\e62d";
+}
+.icon-tiaozhanbei:before {
+  content: "\e668";
 }
 .icon-baiduwenku:before {
   content: "\e98f";
@@ -28,7 +34,7 @@
   margin-top: 30rpx;
   margin-left: 30rpx;
   margin-right: 30rpx;
-  border-radius: 5%;
+  border-radius: 0.5cm;
   display: flex;
   flex-direction: column;
   padding-top: 20rpx;
@@ -41,6 +47,7 @@
   height: 80rpx;
   font-size: 32rpx;
   background-color: #f8f8f8;
+  border-radius: 0.5cm;
 }
 .container .item .name_wrap {
   display: flex;

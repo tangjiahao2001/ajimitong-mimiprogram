@@ -1,1 +1,6 @@
-/* pages/xuexiziyuan_package/pages/PPT/index.wxss */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rpx;
+}

@@ -1,20 +1,15 @@
-// pages/xuexiziyuan_package/pages/computer_2_level/index.js
+// pages/xuexiziyuan_package/pages/tiaozhanbei/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    computer_2_levels:[
+    tiaozhanbeis: [
       {
         id:0,
-        name:"国二office,word,ppt,excel",
-        url:"https://pan.baidu.com/s/123IceSEI7k4ukt1y5E28Xg?pwd=1234"
-      },
-      {
-        id:4,
-        name:"C语言 Ubuntu",
-        url:"https://pan.baidu.com/s/1cPGWCWTXC5h_KRXGuRx4eA?pwd=1234"
+        name:"挑战杯，创青春，互联网资料",
+        url:"https://pan.baidu.com/s/1lrBSSWHqX5kU-SRZ7XakUg?pwd=1234"
       }
     ]
   },

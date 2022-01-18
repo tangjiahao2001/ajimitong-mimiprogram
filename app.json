@@ -18,7 +18,9 @@
       "pages": [
         "pages/PPT/index",
         "pages/computer_2_level/index",
-        "pages/baidu_download/index"
+        "pages/baidu_download/index",
+        "pages/tiaozhanbei/index",
+        "pages/Ajoke/index"
       ]
     }
   ],

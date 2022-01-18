@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "SuperCopy": "../../../../component/SuperCopy/SuperCopy",
+    "ReachBottomWarn": "../../../../component/ReachBottomWarn/ReachBottomWarn"
+  },
   "navigationBarTitleText":"百度文库下载"
 }

@@ -1,0 +1,9 @@
+
+<view class="superCopy">
+    <view class="superCopy_wrap_left">
+        <view class="superCopy_title">{{name}}</view>
+        <!-- <view class="superCopy_text">https://pan.baidu.com/s/1pta7DVJv7XVDULrN2r4L8w?pwd=1234 </view> -->
+        <view class="superCopy_text">{{url}}</view>
+    </view>
+    <view class="superCopy_wrap_right" bindtap="handleSuperCopy" data-text="{{item.text}}">点击复制</view>
+</view>

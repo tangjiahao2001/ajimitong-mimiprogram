@@ -2,6 +2,7 @@
 page{
     background: #efeff4;
     --themeColor: #e08a63;
+    --themeColor2: #ff9b6e;
     font-size: 28rpx;
 }
 

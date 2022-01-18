@@ -1,2 +1,9 @@
-<!--pages/xuexiziyuan_package/pages/PPT/index.wxml-->
-<text>pages/xuexiziyuan_package/pages/PPT/index.wxml</text>
+
+<view class="title">100G+ PPT模板</view>
+<view
+    wx:for="{{ppts}}"
+    wx:key="id"
+>
+    <SuperCopy name="{{item.name}}" url="{{item.url}}"></SuperCopy>
+</view>
+<ReachBottomWarn></ReachBottomWarn>

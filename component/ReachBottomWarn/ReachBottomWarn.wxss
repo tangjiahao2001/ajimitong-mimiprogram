@@ -1,0 +1,8 @@
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  color: #a09d9d;
+}

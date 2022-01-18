@@ -24,4 +24,20 @@
         <view class="iconfont icon-xiangyoujiantou">
         </view>
     </navigator>
+    <navigator class="item" url="../../pages/xuexiziyuan_package/pages/tiaozhanbei/index" open-type="navigate">
+        <view class="name_wrap">
+            <view class="min_icon iconfont icon-tiaozhanbei"></view>
+            <view class="text">挑战杯，创青春，互联网</view>
+        </view>
+        <view class="iconfont icon-xiangyoujiantou">
+        </view>
+    </navigator>
+    <navigator class="item" url="../../pages/xuexiziyuan_package/pages/Ajoke/index" open-type="navigate">
+        <view class="name_wrap">
+            <view class="min_icon iconfont icon-ajoke"></view>
+            <view class="text">下学期 期末考试试卷</view>
+        </view>
+        <view class="iconfont icon-xiangyoujiantou">
+        </view>
+    </navigator>
 </view>

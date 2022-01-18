@@ -1,2 +1,8 @@
-<!--pages/xuexiziyuan_package/pages/baidu_download/index.wxml-->
-<text>pages/xuexiziyuan_package/pages/baidu_download/index.wxml</text>
+
+<view
+    wx:for="{{baiduwenku}}"
+    wx:key="id"
+>
+    <SuperCopy name="{{item.name}}" url="{{item.url}}"></SuperCopy>
+</view>
+<ReachBottomWarn></ReachBottomWarn>

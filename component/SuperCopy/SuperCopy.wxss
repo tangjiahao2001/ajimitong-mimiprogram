@@ -1,0 +1,47 @@
+.superCopy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor2);
+  margin: 20rpx 10rpx 10rpx;
+  height: 150rpx;
+  width: 730rpx;
+  border-radius: 0.1cm;
+}
+.superCopy .superCopy_wrap_left {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7b390;
+  height: 80%;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.superCopy .superCopy_wrap_left .superCopy_title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  background-color: #f7b390;
+}
+.superCopy .superCopy_wrap_left .superCopy_text {
+  flex: 2;
+  display: -webkit-box;
+  margin-left: 10rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+.superCopy .superCopy_wrap_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+  border-radius: 20%;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  background-color: #f7b390;
+}
