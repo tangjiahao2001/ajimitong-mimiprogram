@@ -8,7 +8,19 @@
     "pages/about/index",
     "pages/user/index",
     "pages/feedbackForBug/index",
-    "pages/wuziqi/index"
+    "pages/wuziqi/index",
+    "pages/xuexiziyuan/index",
+    "pages/PPT/index"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/xuexiziyuan_package",
+      "pages": [
+        "pages/PPT/index",
+        "pages/computer_2_level/index",
+        "pages/baidu_download/index"
+      ]
+    }
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff9b6e",
@@ -30,6 +42,12 @@
         "text": "记事本",
         "iconPath": "images/page_icon/icon_biji.png",
         "selectedIconPath": "images/page_icon/sicon_biji.png"
+      },
+      {
+        "pagePath": "pages/xuexiziyuan/index",
+        "text": "学习资源",
+        "iconPath": "images/page_icon/icon_xuexiziyuan.png",
+        "selectedIconPath": "images/page_icon/sicon_xuexiziyuan.png"
       },
       {
         "pagePath": "pages/about/index",

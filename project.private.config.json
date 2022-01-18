@@ -1,48 +1,54 @@
 {
-  "setting": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "name": "个人中心",
-          "pathName": "pages/user/index",
-          "query": "",
-          "scene": null
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
         },
-        {
-          "name": "记事本首页",
-          "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
+        "game": {
+            "list": []
         },
-        {
-          "name": "日历",
-          "pathName": "pages/about/index",
-          "query": "",
-          "scene": null
+        "gamePlugin": {
+            "list": []
         },
-        {
-          "name": "用户反馈",
-          "pathName": "pages/feedback/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "五子棋",
-          "pathName": "pages/wuziqi/index",
-          "query": "",
-          "scene": null
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "个人中心",
+                    "pathName": "pages/user/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "记事本首页",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "日历",
+                    "pathName": "pages/about/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "用户反馈",
+                    "pathName": "pages/feedback/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "五子棋",
+                    "pathName": "pages/wuziqi/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "学习资源",
+                    "pathName": "pages/xuexiziyuan/index",
+                    "query": "",
+                    "scene": null
+                }
+            ]
         }
-      ]
     }
-  }
 }

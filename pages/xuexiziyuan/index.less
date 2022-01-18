@@ -1,0 +1,48 @@
+// 引入图标网下载的图标代码
+@import url(../../styles/iconfont.wxss);
+
+page{
+}
+
+.container{
+    background-color: #ff9b6e;
+    height: 90vh;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rpx;
+    .item{
+        display: flex;
+        justify-content: space-between; // 实现内容两边对齐
+        align-items: center;
+        margin: 20rpx;
+        // width: 100%;
+        height: 80rpx;
+        font-size: 32rpx;
+        background-color: #f8f8f8;
+        .name_wrap{
+            display: flex;
+            font-size: 35rpx;
+            margin-left: 20rpx;
+            .min_icon{
+                width: 40rpx;
+                height: 40rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--themeColor);
+            }
+            .text{
+                margin-left: 5rpx;
+            }
+        }
+        .iconfont{
+            font-size: 35rpx;
+            font-weight: 800;
+            margin-right: 20rpx;
+        }
+    }
+}

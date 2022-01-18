@@ -1,0 +1,27 @@
+
+<view class="container">
+    <navigator class="item" url="../../pages/xuexiziyuan_package/pages/PPT/index" open-type="navigate">
+        <view class="name_wrap">
+            <view class="min_icon iconfont icon-pptx"></view>
+            <view class="text">PPT</view>
+        </view>
+        <view class="iconfont icon-xiangyoujiantou">
+        </view>
+    </navigator>
+    <navigator class="item" url="../../pages/xuexiziyuan_package/pages/computer_2_level/index" open-type="navigate">
+        <view class="name_wrap">
+            <view class="min_icon iconfont icon-jisuanjierji"></view>
+            <view class="text">计算机二级</view>
+        </view>
+        <view class="iconfont icon-xiangyoujiantou">
+        </view>
+    </navigator>
+    <navigator class="item" url="../../pages/xuexiziyuan_package/pages/baidu_download/index" open-type="navigate">
+        <view class="name_wrap">
+            <view class="min_icon iconfont icon-baiduwenku"></view>
+            <view class="text">百度文库下载</view>
+        </view>
+        <view class="iconfont icon-xiangyoujiantou">
+        </view>
+    </navigator>
+</view>
