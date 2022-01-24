@@ -22,6 +22,12 @@
         "pages/tiaozhanbei/index",
         "pages/Ajoke/index"
       ]
+    },
+    {
+      "root": "pages/user_package",
+      "pages": [
+        "pages/Version/index"
+      ]
     }
   ],
   "window": {

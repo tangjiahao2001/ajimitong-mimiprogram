@@ -71,6 +71,12 @@
                     "pathName": "pages/xuexiziyuan_package/pages/Ajoke/index",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "更新模拟模式",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

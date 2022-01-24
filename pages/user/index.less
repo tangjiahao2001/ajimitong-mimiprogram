@@ -1,130 +1,148 @@
-page{
-    background-color: #efeff4;
+// 引入图标网下载的图标代码，每次引入新的都必须重新保存此文件以修改index.wxss
+@import url(../../styles/iconfont.wxss);
+
+page {
+  background-color: #efeff4;
 }
 
-.user_info_wrap{
-    .user_info{
-        height: 45vh;
-        overflow: hidden;
-        position: relative;
-        .user_img_wrap{
-            position: relative;
-            .user_big_icon{
-                height: 50vh;
-                width: 100%;
-                filter: blur(10px);
-            }
-            .user_little{
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 20%;
-                text-align: center;
-                .user_little_icon{
-                    width: 150rpx;
-                    height: 150rpx;
-                    border-radius: 50%;
-                }
-                .user_name{
-                    color: #fff;
-                    margin-top: 25rpx;
-                    font-size: 35rpx;
-                }
-            }
+.user_info_wrap {
+  .user_info {
+    height  : 45vh;
+    overflow: hidden;
+    position: relative;
+
+    .user_img_wrap {
+      position: relative;
+
+      .user_big_icon {
+        height: 50vh;
+        width : 100%;
+        filter: blur(10px);
+      }
+
+      .user_little {
+        position  : absolute;
+        left      : 50%;
+        transform : translateX(-50%);
+        top       : 20%;
+        text-align: center;
+
+        .user_little_icon {
+          width        : 150rpx;
+          height       : 150rpx;
+          border-radius: 50%;
         }
-        .user_btn{
-            // background-color: red;
-            height: 100%;
-            width: 100%;
-            button{
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 40%;
-                color: var(--themeColor);
-                border: 1rpx solid currentColor;
-                font-size: 38rpx;
-                padding: 30rpx;
-                border-radius: 15rpx;
-            }
+
+        .user_name {
+          color     : #fff;
+          margin-top: 25rpx;
+          font-size : 35rpx;
         }
+      }
     }
+
+    .user_btn {
+      // background-color: red;
+      height: 100%;
+      width : 100%;
+
+      button {
+        position     : absolute;
+        left         : 50%;
+        transform    : translateX(-50%);
+        top          : 40%;
+        color        : var(--themeColor);
+        border       : 1rpx solid currentColor;
+        font-size    : 38rpx;
+        padding      : 30rpx;
+        border-radius: 15rpx;
+      }
+    }
+  }
 }
 
-.container{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 50rpx;
-  .header{
-    display: flex;
+.version_wrap {
+  height        : 100%;
+  display       : flex;
+  box-sizing    : border-box;
+  padding       : 50rpx;
+  justify-content: space-between;
+  align-items: center;
+  .header {
+    display       : flex;
     flex-direction: column;
-    .h1{
-      font-weight: bold;
+    margin-left: 20rpx;
+    .h1 {
+      font-weight  : bold;
       margin-bottom: 20rpx;
     }
-    .h1content{
+    .h1content {
       font-size: 12px;
     }
   }
-  .section{
-    margin: 20rpx 0;
-    height: 120rpx;
-    line-height: 120rpx;
+  .version{
+    font-weight: 600;
+    font-size: 30rpx;
+    margin-right: 20rpx;
+  }
+
+  .section {
+    margin       : 20rpx 0;
+    height       : 120rpx;
+    line-height  : 120rpx;
     border-radius: 10rpx;
-    background: #fff;
-    padding:0 20rpx;
-    .button{
-      display: flex;
+    background   : #fff;
+    padding      : 0 20rpx;
+
+    .button {
+      display        : flex;
       justify-content: space-between;
     }
   }
 }
 
-/* 微信自带意见反馈功能 */
+/* 用户功能 */
+.function{
+  display: flex;
+  flex-direction: column;
+}
+
+/* 意见反馈 and 用户功能 */
 .item {
   // 去样式
-  padding-left: 0;
+  padding-left : 0;
   padding-right: 0;
-  line-height:inherit;
+  line-height  : inherit;
 
   background-color: #f8f8f8;
-  display:flex;
-  flex-direction:row;
-  height: 90rpx;
-  align-items: center;
-  margin: 10rpx 50rpx;
-  text-align:left;
-  text-decoration:none;
-  border-radius: 10rpx;
-  border: 0rpx;
-  .item_left{
-    flex: 9;
+  display         : flex;
+  flex-direction  : row;
+  height          : 90rpx;
+  align-items     : center;
+  margin          : 10rpx 50rpx;
+  text-align      : left;
+  text-decoration : none;
+  border-radius   : 10rpx;
+  border          : 0rpx;
+  justify-content: space-between;
+
+  .item_left {
     margin-left: 10rpx;
-    image{
-      display: flex;
-      justify-content: center;
-      width:50rpx;
-      height:50rpx;
-    }
-    .item_title{
+
+    .item_title {
       margin-left: 10rpx;
-      font-size: 32rpx;
+      font-size  : 32rpx;
     }
   }
-  .item_right{
-    flex: 1;
-    image{
-      display: flex;
-      justify-content: center;
-      width:50rpx;
-      height:50rpx;
-    }
+
+  .item_right {
+    font-weight: 600;
+    font-size: 30rpx;
+    margin-right: 20rpx;
   }
 }
 
 .item::after {
-  border: none;
+  border       : none;
   border-radius: 0;
 }

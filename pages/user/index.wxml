@@ -15,10 +15,12 @@
 
 <view class="user_info_wrap">
   <view class="user_info">
+    <!-- 不存在用户信息 -->
     <view wx:if="{{!hasUserInfo}}" class="user_btn">
       <button wx:if="{{canIUseGetUserProfile}}" bindtap="handleGetUserProfile"> 获取头像昵称 </button>
       <button wx:else open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"> 获取头像昵称 </button>
     </view>
+    <!-- 存在用户信息 -->
     <view wx:else class="user_img_wrap">
       <image bindtap="bindViewTap" class="user_big_icon" src="{{userInfo.avatarUrl}}"></image>
       <view class="user_little">
@@ -30,11 +32,12 @@
 </view>
 
 <!-- 意见反馈界面转移至此页面 -->
-<view class="container">
+<view class="version_wrap" bindtap="handleGetVersionInfo">
   <view class="header">
-    <text class="h1"> 版本号 1.3.0</text>
+    <text class="h1">当前版本号 1.3.0</text>
     <text class="h1content">个人小程序 </text>
   </view>
+  <view class="version iconfont icon-xiangyoujiantou"></view>
   <!-- <view class="section" bindtap="bindViewTap">
     <view class="button">
       <text>用户反馈</text>
@@ -49,14 +52,24 @@
   </view> -->
 </view>
 
+<!-- 用户功能 -->
+<view class="function">
+  <view class="item">
+    <view class="item_left"><view class="item_title">微信公众号（暂未开放）</view></view>
+    <view class="item_right iconfont icon-xiangyoujiantou"></view>
+  </view>
+  <view class="item">
+    <view class="item_left"><view class="item_title">其他小程序（暂未开放）</view></view>
+    <view class="item_right iconfont icon-xiangyoujiantou"></view>
+  </view>
+  <!-- 功能添加... -->
+</view>
+
 <!-- 微信自带意见反馈功能 -->
 <button class="item" open-type="feedback">
   <view class="item_left item">
-    <view class="icon"><image src="../../images/feedback_icon/feedback.png"></image></view>
-      <view class="item_title">意见反馈(功能可用)</view>
-    </view>
-  <view class="item_right">
-    <view class="arrow"><image src="../../images/feedback_icon/arrow-right.png" ></image></view>
+      <view class="item_title">意见反馈 / 问题提交</view>
   </view>
+  <view class="item_right iconfont icon-xiangyoujiantou"></view>
 </button>
 

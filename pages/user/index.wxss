@@ -1,3 +1,36 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3147812 */
+  src: url('//at.alicdn.com/t/font_3147812_ld5n7r1l5ve.woff2?t=1642501077634') format('woff2'), url('//at.alicdn.com/t/font_3147812_ld5n7r1l5ve.woff?t=1642501077634') format('woff'), url('//at.alicdn.com/t/font_3147812_ld5n7r1l5ve.ttf?t=1642501077634') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-yijianfankui:before {
+  content: "\e662";
+}
+.icon-ajoke:before {
+  content: "\e62d";
+}
+.icon-tiaozhanbei:before {
+  content: "\e668";
+}
+.icon-baiduwenku:before {
+  content: "\e98f";
+}
+.icon-jisuanjierji:before {
+  content: "\e7a9";
+}
+.icon-pptx:before {
+  content: "\e650";
+}
+.icon-xiangyoujiantou:before {
+  content: "\e65f";
+}
 page {
   background-color: #efeff4;
 }
@@ -46,25 +79,32 @@ page {
   padding: 30rpx;
   border-radius: 15rpx;
 }
-.container {
+.version_wrap {
   height: 100%;
   display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   padding: 50rpx;
+  justify-content: space-between;
+  align-items: center;
 }
-.container .header {
+.version_wrap .header {
   display: flex;
   flex-direction: column;
+  margin-left: 20rpx;
 }
-.container .header .h1 {
+.version_wrap .header .h1 {
   font-weight: bold;
   margin-bottom: 20rpx;
 }
-.container .header .h1content {
+.version_wrap .header .h1content {
   font-size: 12px;
 }
-.container .section {
+.version_wrap .version {
+  font-weight: 600;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+.version_wrap .section {
   margin: 20rpx 0;
   height: 120rpx;
   line-height: 120rpx;
@@ -72,11 +112,16 @@ page {
   background: #fff;
   padding: 0 20rpx;
 }
-.container .section .button {
+.version_wrap .section .button {
   display: flex;
   justify-content: space-between;
 }
-/* 微信自带意见反馈功能 */
+/* 用户功能 */
+.function {
+  display: flex;
+  flex-direction: column;
+}
+/* 意见反馈 and 用户功能 */
 .item {
   padding-left: 0;
   padding-right: 0;
@@ -91,29 +136,19 @@ page {
   text-decoration: none;
   border-radius: 10rpx;
   border: 0rpx;
+  justify-content: space-between;
 }
 .item .item_left {
-  flex: 9;
   margin-left: 10rpx;
-}
-.item .item_left image {
-  display: flex;
-  justify-content: center;
-  width: 50rpx;
-  height: 50rpx;
 }
 .item .item_left .item_title {
   margin-left: 10rpx;
   font-size: 32rpx;
 }
 .item .item_right {
-  flex: 1;
-}
-.item .item_right image {
-  display: flex;
-  justify-content: center;
-  width: 50rpx;
-  height: 50rpx;
+  font-weight: 600;
+  font-size: 30rpx;
+  margin-right: 20rpx;
 }
 .item::after {
   border: none;

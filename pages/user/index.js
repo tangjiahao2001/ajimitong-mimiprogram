@@ -16,8 +16,7 @@ Page({
     motto: "Hello World",
   },
 
-  /* 以下为个人信息处理的函数 */
-  //#region
+  //#region 以下为个人信息相关函数
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({
@@ -75,11 +74,15 @@ Page({
   //     userinfo
   //   })
   // }
-  
   //#endregion
 
-  /* 以下为意见反馈部分的函数 */
-  //#region
+  //#region 以下为版本信息相关函数
+  handleGetVersionInfo: function () {
+    wx.navigateTo({url: '../user_package/pages/Version/index'})
+  },
+  //#endregion
+
+  //#region 以下为意见反馈相关函数
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
@@ -112,7 +115,5 @@ Page({
       path: '/pages/about/index?hotappPath=about'
     }
   }
-
-
   //#endregion
 })
