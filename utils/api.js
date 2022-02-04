@@ -65,9 +65,9 @@ function formatItem(item) {
     item.date = `${create_time.getFullYear()}-${(create_time.getMonth()+1)}-${create_time.getDate()}`;
     item.create_date = `${create_time.getFullYear()}-${(create_time.getMonth() + 1)}-${create_time.getDate()}`;
     var update_time = new Date(item.update_time * 1000);
-    item.update_date = `${update_time.getFullYear()}-${update_time.getMonth() + 1}-${update_time.getDate()} ${update_time.getHours()}时${update_time.getMinutes()}分`;
+    item.update_date = `${update_time.getFullYear()}-${update_time.getMonth() + 1}-${update_time.getDate()} ${update_time.getHours()}:${update_time.getMinutes()}`;
+    
     //今天的日记和昨天的日记显示不同的颜色
-
     var d = new Date();
     var today = `${d.getFullYear()}-${(d.getMonth()+1)}-${d.getDate()}`;
     var yestoday = `${d.getFullYear()}-${(d.getMonth()+1)}-${(d.getDate()-1)}`;
