@@ -78,7 +78,18 @@ Page({
 
   //#region 以下为版本信息相关函数
   handleGetVersionInfo: function () {
-    wx.navigateTo({url: '../user_package/pages/Version/index'})
+    // wx.navigateTo({url: '../user_package/pages/Version/index'})
+    wx.navigateToMiniProgram({
+      appId: 'wxbcfa40501665ddf7',
+      path: 'page/index/index?id=123',
+      extraData: {
+        foo: 'bar'
+      },
+      envVersion: 'develop',
+      success(res) {
+        // 打开成功
+      }
+    })
   },
   //#endregion
 
@@ -114,6 +125,15 @@ Page({
       desc: '阿基米曈之家',
       path: '/pages/about/index?hotappPath=about'
     }
+  },
+  //#endregion
+
+  //#region 测试使用
+  /**
+   * 测试添加模块使用
+   */
+  handleTestPage: function() {
+    wx.navigateTo({url: '../Debug/index'})
   }
   //#endregion
 })

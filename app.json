@@ -10,7 +10,8 @@
     "pages/feedbackForBug/index",
     "pages/wuziqi/index",
     "pages/xuexiziyuan/index",
-    "pages/PPT/index"
+    "pages/PPT/index",
+    "pages/Debug/index"
   ],
   "subPackages": [
     {
@@ -21,12 +22,6 @@
         "pages/baidu_download/index",
         "pages/tiaozhanbei/index",
         "pages/Ajoke/index"
-      ]
-    },
-    {
-      "root": "pages/user_package",
-      "pages": [
-        "pages/Version/index"
       ]
     }
   ],

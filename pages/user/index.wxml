@@ -73,3 +73,10 @@
   <view class="item_right iconfont icon-xiangyoujiantou"></view>
 </button>
 
+<!-- 测试新添加模块 -->
+<view class="function">
+  <view class="item" bindtap="handleTestPage">
+    <view class="item_left"><view class="item_title">调试 / 测试</view></view>
+    <view class="item_right iconfont icon-xiangyoujiantou"></view>
+  </view>
+</view>

@@ -17,7 +17,8 @@ page,view,text,swiper,swiper-item,naviagtor{
   display: flex;
   display:-webkit-flex;
   box-sizing: border-box;
-} 
+}
+
 .placeholder{
     font-size: 30rpx;
     color: #999;
