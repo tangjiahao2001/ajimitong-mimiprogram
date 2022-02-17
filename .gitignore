@@ -1,5 +1,9 @@
+# project relaxed
 .idea/
+.vscode/
+.git/
+
+# other
 utils/ald-sdk/
 tests/
 node_modules/
-.git/

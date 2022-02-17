@@ -77,6 +77,12 @@
                     "pathName": "pages/index/index",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "扫雷游戏",
+                    "pathName": "pages/MineSweeper/index",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

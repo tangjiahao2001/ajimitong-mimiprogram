@@ -5,13 +5,13 @@
     "pages/feedback/index",
     "pages/edit/index",
     "pages/create/index",
-    "pages/about/index",
     "pages/user/index",
     "pages/feedbackForBug/index",
     "pages/wuziqi/index",
     "pages/xuexiziyuan/index",
     "pages/PPT/index",
-    "pages/Debug/index"
+    "pages/Debug/index",
+    "pages/MineSweeper/index"
   ],
   "subPackages": [
     {
@@ -53,10 +53,10 @@
         "selectedIconPath": "images/page_icon/sicon_xuexiziyuan.png"
       },
       {
-        "pagePath": "pages/about/index",
-        "text": "about",
-        "iconPath": "images/page_icon/icon_about.png",
-        "selectedIconPath": "images/page_icon/sicon_about.png"
+        "pagePath": "pages/MineSweeper/index",
+        "text": "扫雷",
+        "iconPath": "images/page_icon/icon_sweeper.png",
+        "selectedIconPath": "images/page_icon/sicon_sweeper.png"
       },
       {
         "pagePath": "pages/wuziqi/index",

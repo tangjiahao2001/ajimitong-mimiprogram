@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "阿基米曈日历",
-  "usingComponents": {
-    "calender": "../../component/calendar/index"
-  }
-}
