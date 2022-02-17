@@ -34,7 +34,7 @@
 <!-- 意见反馈界面转移至此页面 -->
 <view class="version_wrap" bindtap="handleGetVersionInfo">
   <view class="header">
-    <text class="h1">当前版本号 V1.3.5 </text>
+    <text class="h1">当前版本号 V1.4.0 </text>
     <text class="h1content">个人小程序 2022/02/04</text>
   </view>
   <view class="version iconfont icon-xiangyoujiantou"></view>
