@@ -81,7 +81,7 @@ Page({
     // wx.navigateTo({url: '../user_package/pages/Version/index'})
     wx.navigateToMiniProgram({
       appId: 'wxbcfa40501665ddf7',
-      path: 'page/index/index?id=123',
+      path: 'page/index/index',
       extraData: {
         foo: 'bar'
       },

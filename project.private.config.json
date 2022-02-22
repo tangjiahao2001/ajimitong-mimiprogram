@@ -31,12 +31,6 @@
                     "scene": null
                 },
                 {
-                    "name": "用户反馈",
-                    "pathName": "pages/feedback/index",
-                    "query": "",
-                    "scene": null
-                },
-                {
                     "name": "五子棋",
                     "pathName": "pages/wuziqi/index",
                     "query": "",
